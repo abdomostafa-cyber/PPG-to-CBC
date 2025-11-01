@@ -1,0 +1,72 @@
+labs_cleaning:
+  labs_csv: data/raw/LABEVENTS.csv
+  d_labitems_csv: data/raw/D_LABITEMS.csv
+  output_clean_csv: data/clean/labs_cbc_clean.csv
+  subject_filter_csv: null
+  columns:
+    subject_id:
+    - SUBJECT_ID
+    - subject_id
+    hadm_id:
+    - HADM_ID
+    - hadm_id
+    charttime:
+    - CHARTTIME
+    - charttime
+    itemid:
+    - ITEMID
+    - itemid
+    label:
+    - LABEL
+    - label
+    - TESTNAME
+    - test_name
+    value:
+    - VALUENUM
+    - value
+    - VALUE
+    valueuom:
+    - VALUEUOM
+    - valueuom
+    flag:
+    - FLAG
+    - flag
+    - ABNORMAL
+    - abnormal
+    - RESULTS
+    - results
+  cbc_labels:
+  - Hemoglobin
+  - Hematocrit
+  - WBC
+  - Platelet Count
+  - RBC
+  - MCV
+  - MCH
+  - MCHC
+  - RDW
+  - Neutrophils
+  - Lymphocytes
+  - Monocytes
+  - Eosinophils
+  - Basophils
+  cbc_itemids: []
+  flag_keep:
+  - positive
+  - negative
+  - abnormal
+  - high
+  - low
+  drop_na_value: true
+  dedupe_keys:
+  - subject_id
+  - charttime
+  - label
+  time_format_out: '%Y-%m-%d %H:%M:%S'
+  chunksize: 300000
+  streaming: true
+  memory_safe: true
+  notes:
+  - Streaming mode enabled to handle 18GB+ LABEVENTS.csv.
+  - Adjust 'chunksize' based on available RAM.
+  - Provide D_LABITEMS.csv for ITEMID mapping and faster CBC filtering.

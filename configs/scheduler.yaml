@@ -1,0 +1,6 @@
+scheduler:
+  notebooks_glob: notebooks/*_resnet50.ipynb
+  run_order: []
+  output_dir: outputs/results
+  kernel: python3
+  timeout_sec: 3600

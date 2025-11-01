@@ -1,0 +1,14 @@
+matcher:
+  signals_dir: data/reduced_waveforms
+  labs_clean_csv: data/clean/labs_cbc_clean.csv
+  output_dir: data/matched
+  ppg_key: PPG_Raw
+  group_name: Subj_Wins
+  fs: 125
+  window_minutes: 15
+  align_by: Segment_Time
+  subject_id_field: SubjectID
+  time_field: Segment_Time
+  time_format_in: '%Y-%m-%d-%H-%M-%S'
+  charttime_format: '%Y-%m-%d %H:%M:%S'
+  leakage_guard: by_subject

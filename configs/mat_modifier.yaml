@@ -1,0 +1,33 @@
+seed: 42
+paths:
+  raw_waveforms: data/mimic_waveforms
+  reduced_waveforms: data/reduced_waveforms
+mat_modifier:
+  glob: '*.mat'
+  group_name: Subj_Wins
+  keys_to_include:
+  - Age
+  - CaseID
+  - Gender
+  - PPG_Raw
+  - SegmentID
+  - SubjectID
+  - T
+  time_fields:
+    case_id_key: CaseID
+    segment_id_key: SegmentID
+    case_id_format: '%Y-%m-%d-%H-%M'
+    seconds_per_segment: 10
+    output_key: Segment_Time
+    output_format: '%Y-%m-%d-%H-%M-%S'
+  rename_map:
+    PPG: PPG_Raw
+    ABP: ABP_Raw
+    ECG: ECG_Raw
+    subject_id: SubjectID
+    case_id: CaseID
+    age: Age
+    sex: Gender
+    segment_id: SegmentID
+    record_time: T
+  compression: false
