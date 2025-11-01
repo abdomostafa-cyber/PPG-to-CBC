@@ -44,7 +44,8 @@ It is currently implemented as a modular workflow composed of four main stages:
 
 ## 🧩 Folder Structure (Work in Progress)
 
-`project_root/
+```
+project_root/
 │
 ├── configs/
 │ ├── mat_modifier.yaml
@@ -67,7 +68,8 @@ It is currently implemented as a modular workflow composed of four main stages:
 | ├── models/
 | └──  └── hematocrit_resnet50.ipynb # example model
 │ 
-└── scripts/ # generated later from notebooks`
+└── scripts/ # generated later from notebooks
+```
 
 ## 📈 Current Status
 
