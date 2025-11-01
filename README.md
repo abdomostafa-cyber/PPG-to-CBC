@@ -36,7 +36,7 @@ It is currently implemented as a modular workflow composed of four main stages:
 
 - **Language:** Python 3.11  
 - **Core Dependencies:** `pandas`, `numpy`, `mat73`, `h5py`, `yaml`, `tqdm`  
-- **Data Source:** [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/), [PulseDB 2.0](https://github.com/pulselabteam/PulseDB), and (VitalDB)[https://vitaldb.net/dataset/]  
+- **Data Source:** [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/), [PulseDB 2.0](https://github.com/pulselabteam/PulseDB), and [VitalDB](https://vitaldb.net/dataset).  
 - **Input Size:** ~18 GB (lab data) + waveform `.mat` files  
 - **Processing Mode:** Chunked / memory-safe streaming
 
