@@ -1,8 +1,8 @@
-# 🩸 PPG-to-CBC Prediction: A Work in Progress
+# 🩸 PPG-to-CBC Classification: A Work in Progress
 
 > **Status:** 🚧 *Active Development / Research Prototype*
 
-This repository hosts the ongoing development of a proof-of-concept pipeline that predicts **Complete Blood Count (CBC)** laboratory test results from **photoplethysmography (PPG)** signals.  
+This repository hosts the ongoing development of a proof-of-concept pipeline that classifies **Complete Blood Count (CBC)** laboratory test results using **photoplethysmography (PPG)** signals.  
 The work is motivated by the potential of non-invasive, continuous physiological monitoring to approximate key hematological biomarkers.
 
 ---
